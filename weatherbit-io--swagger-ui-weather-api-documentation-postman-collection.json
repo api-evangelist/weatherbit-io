@@ -1,0 +1,3778 @@
+{
+    "id": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+    "name": "Weatherbit.io - Swagger UI Weather API documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "cd0a989bb2a6eb66f6df02d4396a6060",
+            "name": "Returns Historical Observations - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?city={city}&country={country}",
+            "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "c43927ea9f96d61add75f06213eb46f6",
+            "name": "Returns Historical Observations - Given a City ID",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?city_id={city_id}",
+            "description": "Returns Historical Observations - Given a City ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "997393d683915e555411974ab22a709f",
+            "name": "Returns Historical Observations - Given IP Address, or auto.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?ip={ip}",
+            "description": "Returns Historical Observations - Given IP Address, or auto.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "cd10c2ffb1783f82feeec0597c4de2fe",
+            "name": "Returns Historical Observations - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?lat={lat}&lon={lon}",
+            "description": "Returns Historical Observations - Given a lat, and lon.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "3629cb4b0ae8c086505c9ff4ff47fa22",
+            "name": "Returns Historical Observations - Given a Postal Code",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?postal_code={postal_code}",
+            "description": "Returns Historical Observations - Given a Postal Code.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "e3a4204f5d8871c3555fc0bc18710581",
+            "name": "Returns Historical Observations - Given a station ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/daily?station={station}",
+            "description": "Returns Historical Observations - Given a station ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "station",
+                    "description": "Station ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "110b0231c096d9ce2ed8eef9bbae8516",
+            "name": "Returns Historical Observations - Given City and\/or State, Country. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?city={city}&country={country}",
+            "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "99ea907ed32385cdb6bf5c35e307dfd3",
+            "name": "Returns Historical Observations - Given a City ID. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?city_id={city_id}",
+            "description": "Returns Historical Observations - Given a City ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "43ed3aa8d7ff38c89796565ca7ad74ec",
+            "name": "Returns Historical Observations - Given IP Address, or auto. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?ip={ip}",
+            "description": "Returns Historical Observations - Given IP Address, or auto.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "a107d38635a68bf4b72c251c23c7210d",
+            "name": "Returns Historical Observations - Given a lat\/lon. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?lat={lat}&lon={lon}",
+            "description": "Returns Historical Observations - Given a lat, and lon.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e33a77dde50f44e6aed87466e508366",
+            "name": "Returns Historical Observations - Given a Postal Code. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?postal_code={postal_code}",
+            "description": "Returns Historical Observations - Given a Postal Code. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "96290b16b81a6edae53bdf674a7d56e8",
+            "name": "Returns Historical Observations - Given a station ID. (1 Year\/call limit)",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/history\/hourly?station={station}",
+            "description": "Returns Historical Observations - Given a station ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "station",
+                    "description": "Station ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "065ecac9f604c2384a11799df99946c4",
+            "name": "Download pre-generated bulk datasets",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/bulk\/{file}",
+            "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Downloads bulk data files - OPTIONS: (forecast16d.json.gz - 16 day forecasts for cities > 1000 population, current.json.gz - Current observations for cities > 1000 population).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "file",
+                    "description": "Filename (ie. forecast16d.json.gz)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6a81b949752fcffaefa4955870a6d8b",
+            "name": "Returns a group of observations given a list of cities",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?cities={cities}",
+            "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of City IDs. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "cities",
+                    "description": "Comma separated list of City ID's. Example: 4487042, 4494942, 4504871",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa13869b84476a03d92974d8786c47c4",
+            "name": "Returns a Current Observation - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?city={city}&country={country}",
+            "description": "Returns a Current Observation - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "480ddd2e704d7890efc7b7ddf8a95ea1",
+            "name": "Returns a current observation by city id.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?city_id={city_id}",
+            "description": "Returns current weather observation - Given a City ID. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "0c559970acca205413e772fba6a825eb",
+            "name": "Returns a Current Observation - Given an IP address, or auto.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?ip={ip}",
+            "description": "Returns a Current Observation - Given an IP address, or auto.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "e83f642af07d74b342a8a3b27751923d",
+            "name": "Returns a Current Observation - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?lat={lat}&lon={lon}",
+            "description": "Returns a Current Observation - given a lat, and a lon.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "73c8dd351b416299e73f4d8bdcddaa8c",
+            "name": "Returns a current observation by postal code.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?postal_code={postal_code}",
+            "description": "Returns current weather observation - Given a Postal Code. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "marine",
+                    "description": "Marine stations only (buoys, oil platforms, etc)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4ae0107becd9e4f276fad765e4904ef",
+            "name": "Returns a Current Observation. - Given a station ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?station={station}",
+            "description": "Returns a Current Observation - Given a station ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "station",
+                    "description": "Station ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e3e16a63e30deafc6962d4ed6194b2b",
+            "name": "Returns a group of observations given a list of stations",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/current?stations={stations}",
+            "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of Station Call IDs. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "stations",
+                    "description": "Comma separated list of Station Call ID's. Example: KRDU,KBFI,KVNY",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ba76faf433712ad29f3f5ac9dbd0ef9",
+            "name": "Returns a 3-hourly forecast - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?city={city}&country={country}",
+            "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "910977f32ce04813ec9e2f669c0e5155",
+            "name": "Returns a 3-hourly forecast - Given a City ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?city_id={city_id}",
+            "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "f62c7c07d462160015e23fe9423ae0d5",
+            "name": "Returns a 3hourly forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?ip={ip}",
+            "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "077c2a18a942df7364857ddf2c950b03",
+            "name": "Returns a 3-hourly forecast - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?lat={lat}&lon={lon}",
+            "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "f29c77d8b01fc0f4b5daca7ab4e91e2b",
+            "name": "Returns a 3-hourly forecast - Given a Postal Code.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?postal_code={postal_code}",
+            "description": "Returns a 3-hourly forecast, where each point represents a three hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "daaa7093780c25d85596e4083029a907",
+            "name": "Returns a daily forecast - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/daily?city={city}&country={country}",
+            "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a145641d74d9faaf269d59e1cb12b6e",
+            "name": "Returns a daily forecast - Given a City ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/daily?city_id={city_id}",
+            "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "6918dc994ab43c92df89a12841d17fd9",
+            "name": "Returns a daily forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/daily?ip={ip}",
+            "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "f697b7f2c8a2360fe45194bfe1ddfd48",
+            "name": "Returns a daily forecast - Given Lat\/Lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/daily?lat={lat}&lon={lon}",
+            "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "773622cc91ba7b6cbb9b1569f1419285",
+            "name": "Returns a daily forecast - Given a Postal Code.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/daily?postal_code={postal_code}",
+            "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cfab19e165db2cd0873df7cdeacbdd1",
+            "name": "Returns an 48 hour (hourly forecast) - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/hourly?city={city}&country={country}",
+            "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hours",
+                    "description": "Number of hours to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f63c41321cd04d9d92c4f5d31ca7a07",
+            "name": "Returns a 48 hour (hourly) forecast - Given a City ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/hourly?city_id={city_id}",
+            "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hours",
+                    "description": "Number of hours to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "c7deafb847c9c9c3b912738b487d1746",
+            "name": "Returns a hourly forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/hourly?ip={ip}",
+            "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "days",
+                    "description": "Number of days to return. Default 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hours",
+                    "description": "Number of hours to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "5546fc0b87b761409d2f1a8bdbef41d7",
+            "name": "Returns 48 hour (hourly) forecast - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/hourly?lat={lat}&lon={lon}",
+            "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hours",
+                    "description": "Number of hours to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "84595f2ea99b286daf44719bbf028fa5",
+            "name": "Returns a 48 hour (hourly) forecast - Given a Postal Code.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/forecast\/hourly?postal_code={postal_code}",
+            "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hours",
+                    "description": "Number of hours to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "43865537cc5bde34df7d08ef60acaede",
+            "name": "Returns Historical Observations - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?city={city}&country={country}",
+            "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "baf790a64ad5892df82e4c8912b0be9c",
+            "name": "Returns Historical Observations - Given a City ID",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?city_id={city_id}",
+            "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "bfd60a9229fbd7a5d5f5209265f26db0",
+            "name": "Returns Historical Observations - Given IP Address, or auto.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?ip={ip}",
+            "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "5ecb2cd9249dd0b4dd997ea3ad8efeea",
+            "name": "Returns Historical Observations - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?lat={lat}&lon={lon}",
+            "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "0a1c3c6c783fe9665ac26026705636a5",
+            "name": "Returns Historical Observations - Given a Postal Code",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?postal_code={postal_code}",
+            "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "f1de0d155022d87d56fe1e6695881153",
+            "name": "Returns Historical Observations - Given a station ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/daily?station={station}",
+            "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "station",
+                    "description": "Station ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3bcf324ad089ecf87cafa6694e96914",
+            "name": "Returns multiple locations given a bounding box. ",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/energy\/bbox?lat1={lat1}&lon1={lon1}&lat2={lat2}&lon2={lon2}",
+            "description": "Returns aggregate energy specific historical weather fields, over a specified time period. Supply a bounding box ex: lat1=40&lon1=-78&lat2=38&lon2=-80. This API will return UP TO 150 stations, aggregated by the specified time period start_date to end_date. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat1",
+                    "description": "Latitude of upper left corner.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon1",
+                    "description": "Longitude of upper left corner.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lat2",
+                    "description": "Latitude of lower right corner.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon2",
+                    "description": "Longitude of lower right corner.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "threshold",
+                    "description": "Temperature threshold to use to calculate degree days (default 18 C) ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf9765cd9861d0979f86557c280ca69d",
+            "name": "Returns Energy API response  - Given a single lat\/lon. ",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/energy?lat={lat}&lon={lon}",
+            "description": "Returns aggregate energy specific historical weather fields, over a specified time period.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tp",
+                    "description": "Time period to aggregate by (daily, monthly)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "threshold",
+                    "description": "Temperature threshold to use to calculate degree days (default 18 C) ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ee342d2e80f9b1b26ab0d054b340aa7",
+            "name": "Returns Historical Observations - Given City and\/or State, Country.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?city={city}&country={country}",
+            "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city",
+                    "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "state",
+                    "description": "Full name of state.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "e95c57ff1e83325585eecc74314ad9bd",
+            "name": "Returns Historical Observations - Given a City ID",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?city_id={city_id}",
+            "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "city_id",
+                    "description": "City ID. Example: 4487042",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "37309fcf6eb941aa0dd2e56b2449f2f7",
+            "name": "Returns Historical Observations - Given IP Address, or auto.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?ip={ip}",
+            "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "ef3be41c25ec9fda26b7c66c19859ba4",
+            "name": "Returns Historical Observations - Given a lat\/lon.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?lat={lat}&lon={lon}",
+            "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lat",
+                    "description": "Latitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude component of location.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd3232c1938681e2f2c9d1dd778f21be",
+            "name": "Returns Historical Observations - Given a Postal Code",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?postal_code={postal_code}",
+            "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postal_code",
+                    "description": "Postal Code. Example: 28546",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "country",
+                    "description": "Country Code (2 letter).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1ac1f32fbdb597d69ba5079fe07b533",
+            "name": "Returns Historical Observations - Given a station ID.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/history\/hourly?station={station}",
+            "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "station",
+                    "description": "Station ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "units",
+                    "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff6e09ebd0ff3e6668d272a0f5e58af6",
+            "name": "Returns an Geolocation object.",
+            "url": "http:\/\/api.weatherbit.io\/v2.0\/ip?ip={ip}",
+            "description": "Returns a geolocation object. Given an IP address. If no IP supplied, will use request IP address.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ip",
+                    "description": "IP Address, or auto. Example: ip=auto",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "callback",
+                    "description": "Wraps return in jsonp callback. Example: callback=func",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude",
+                    "description": "exclude=all => return IP address only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "&format=none => return IP address as string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "key",
+                    "description": "Your registered API key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7a5e0659c9f8f9649b4f6e6c350c4c69",
+            "rawModeData": ""
+        }
+    ]
+}
