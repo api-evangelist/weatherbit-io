@@ -1,0 +1,115 @@
+{
+    "name": "Weatherbit.io",
+    "description": "Our Weather API is the most powerful Weather data API on the web. Sign up for our free Weather API, and upgrade as your weather data needs grow!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28119-weatherbit.jpg",
+    "tags": [
+        "broadcasts",
+        "general data",
+        "have api",
+        "have swagger",
+        "service api",
+        "streams",
+        "weather"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/weatherbit-io\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Weatherbit",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28119-weatherbit.jpg",
+            "humanURL": "http:\/\/www.weatherbit.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/weatherbit.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/weatherbit-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/weatherbit-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Weatherbit.io - Swagger UI Weather API documentation",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28119-weatherbit.jpg",
+            "humanURL": "http:\/\/www.weatherbit.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/weatherbit-io--swagger-ui-weather-api-documentation.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/weatherbit-io--swagger-ui-weather-api-documentation-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/weatherbit-io--swagger-ui-weather-api-documentation-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.weatherbit.io\/blog"
+        },
+        {
+            "type": "Contact Form",
+            "url": "https:\/\/www.weatherbit.io\/contact"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/product\/weather-it-"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/www.weatherbit.io\/api"
+        },
+        {
+            "type": "Email",
+            "url": "support@weatherbit.io"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/weatherbit"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28119-2019-09-03-21-02-41.json"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/www.weatherbit.io\/pricing"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/weatherbitio"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/weatherbit.io"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.weatherbit.io"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.weatherbit.io\/api"
+        }
+    ]
+}
