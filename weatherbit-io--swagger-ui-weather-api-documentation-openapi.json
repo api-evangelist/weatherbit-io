@@ -1,0 +1,3858 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.0",
+        "title": "Weatherbit.io - Swagger UI Weather API documentation",
+        "description": "This is the documentation for the Weatherbit Weather API.  The base URL for the API is [http:\/\/api.weatherbit.io\/v2.0\/](http:\/\/api.weatherbit.io\/v2.0\/) or [https:\/\/api.weatherbit.io\/v2.0\/](http:\/\/api.weatherbit.io\/v2.0\/). Below is the Swagger UI documentation for the API. All API requests require the `key` parameter.        An Example for a 5 day forecast for London, UK would be `http:\/\/api.weatherbit.io\/v2.0\/forecast\/3hourly?city=London`&`country=UK`. See our [Weather API description page](https:\/\/www.weatherbit.io\/api) for additional documentation.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.weatherbit.io\/v2.0"
+    ],
+    "paths": {
+        "\/bulk\/history\/daily?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given City and\/or State, Country.",
+                "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+                "operationId": "BulkHistoryDailyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/daily?city_id={city_id}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a City ID",
+                "description": "Returns Historical Observations - Given a City ID.",
+                "operationId": "BulkHistoryDailyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/daily?ip={ip}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given IP Address, or auto.",
+                "description": "Returns Historical Observations - Given IP Address, or auto.",
+                "operationId": "BulkHistoryDailyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/daily?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a lat\/lon.",
+                "description": "Returns Historical Observations - Given a lat, and lon.",
+                "operationId": "BulkHistoryDailyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/daily?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a Postal Code",
+                "description": "Returns Historical Observations - Given a Postal Code.",
+                "operationId": "BulkHistoryDailyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/daily?station={station}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a station ID.",
+                "description": "Returns Historical Observations - Given a station ID.",
+                "operationId": "BulkHistoryDailyStationStationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "station",
+                        "in": "path",
+                        "description": "Station ID."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given City and\/or State, Country. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+                "operationId": "BulkHistoryHourlyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?city_id={city_id}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a City ID. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given a City ID.",
+                "operationId": "BulkHistoryHourlyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?ip={ip}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given IP Address, or auto. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given IP Address, or auto.",
+                "operationId": "BulkHistoryHourlyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a lat\/lon. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given a lat, and lon.",
+                "operationId": "BulkHistoryHourlyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a Postal Code. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given a Postal Code. ",
+                "operationId": "BulkHistoryHourlyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/history\/hourly?station={station}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a station ID. (1 Year\/call limit)",
+                "description": "Returns Historical Observations - Given a station ID.",
+                "operationId": "BulkHistoryHourlyStationStationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "station",
+                        "in": "path",
+                        "description": "Station ID."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/bulk\/{file}": {
+            "get": {
+                "summary": "Download pre-generated bulk datasets",
+                "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Downloads bulk data files - OPTIONS: (forecast16d.json.gz - 16 day forecasts for cities > 1000 population, current.json.gz - Current observations for cities > 1000 population).",
+                "operationId": "BulkFileGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "path",
+                        "description": "Filename (ie. forecast16d.json.gz)"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "No Data.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?cities={cities}": {
+            "get": {
+                "summary": "Returns a group of observations given a list of cities",
+                "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of City IDs. ",
+                "operationId": "CurrentCitiesCitiesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "cities",
+                        "in": "path",
+                        "description": "Comma separated list of City ID's. Example: 4487042, 4494942, 4504871"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns a Current Observation - Given City and\/or State, Country.",
+                "description": "Returns a Current Observation - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
+                "operationId": "CurrentCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?city_id={city_id}": {
+            "get": {
+                "summary": "Returns a current observation by city id.",
+                "description": "Returns current weather observation - Given a City ID. ",
+                "operationId": "CurrentCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?ip={ip}": {
+            "get": {
+                "summary": "Returns a Current Observation - Given an IP address, or auto.",
+                "description": "Returns a Current Observation - Given an IP address, or auto.",
+                "operationId": "CurrentIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns a Current Observation - Given a lat\/lon.",
+                "description": "Returns a Current Observation - given a lat, and a lon.",
+                "operationId": "CurrentLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns a current observation by postal code.",
+                "description": "Returns current weather observation - Given a Postal Code. ",
+                "operationId": "CurrentPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "marine",
+                        "in": "query",
+                        "description": "Marine stations only (buoys, oil platforms, etc)"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?station={station}": {
+            "get": {
+                "summary": "Returns a Current Observation. - Given a station ID.",
+                "description": "Returns a Current Observation - Given a station ID.",
+                "operationId": "CurrentStationStationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "station",
+                        "in": "path",
+                        "description": "Station ID."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/current?stations={stations}": {
+            "get": {
+                "summary": "Returns a group of observations given a list of stations",
+                "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of Station Call IDs. ",
+                "operationId": "CurrentStationsStationsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "stations",
+                        "in": "path",
+                        "description": "Comma separated list of Station Call ID's. Example: KRDU,KBFI,KVNY"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/3hourly?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns a 3-hourly forecast - Given City and\/or State, Country.",
+                "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+                "operationId": "Forecast3hourlyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/3hourly?city_id={city_id}": {
+            "get": {
+                "summary": "Returns a 3-hourly forecast - Given a City ID.",
+                "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+                "operationId": "Forecast3hourlyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/3hourly?ip={ip}": {
+            "get": {
+                "summary": "Returns a 3hourly forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+                "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+                "operationId": "Forecast3hourlyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/3hourly?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns a 3-hourly forecast - Given a lat\/lon.",
+                "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+                "operationId": "Forecast3hourlyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/3hourly?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns a 3-hourly forecast - Given a Postal Code.",
+                "description": "Returns a 3-hourly forecast, where each point represents a three hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
+                "operationId": "Forecast3hourlyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/daily?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns a daily forecast - Given City and\/or State, Country.",
+                "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
+                "operationId": "ForecastDailyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/daily?city_id={city_id}": {
+            "get": {
+                "summary": "Returns a daily forecast - Given a City ID.",
+                "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
+                "operationId": "ForecastDailyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/daily?ip={ip}": {
+            "get": {
+                "summary": "Returns a daily forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+                "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
+                "operationId": "ForecastDailyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/daily?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns a daily forecast - Given Lat\/Lon.",
+                "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
+                "operationId": "ForecastDailyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/daily?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns a daily forecast - Given a Postal Code.",
+                "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
+                "operationId": "ForecastDailyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/hourly?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns an 48 hour (hourly forecast) - Given City and\/or State, Country.",
+                "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
+                "operationId": "ForecastHourlyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "hours",
+                        "in": "query",
+                        "description": "Number of hours to return."
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/hourly?city_id={city_id}": {
+            "get": {
+                "summary": "Returns a 48 hour (hourly) forecast - Given a City ID.",
+                "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+                "operationId": "ForecastHourlyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "hours",
+                        "in": "query",
+                        "description": "Number of hours to return."
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/hourly?ip={ip}": {
+            "get": {
+                "summary": "Returns a hourly forecast - Given an IP Address, or ip=auto for automatic IP lookup.",
+                "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+                "operationId": "ForecastHourlyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "days",
+                        "in": "query",
+                        "description": "Number of days to return. Default 5."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "hours",
+                        "in": "query",
+                        "description": "Number of hours to return."
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/hourly?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns 48 hour (hourly) forecast - Given a lat\/lon.",
+                "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+                "operationId": "ForecastHourlyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    },
+                    {
+                        "name": "hours",
+                        "in": "query",
+                        "description": "Number of hours to return."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/forecast\/hourly?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns a 48 hour (hourly) forecast - Given a Postal Code.",
+                "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
+                "operationId": "ForecastHourlyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "hours",
+                        "in": "query",
+                        "description": "Number of hours to return."
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given City and\/or State, Country.",
+                "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?city_id={city_id}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a City ID",
+                "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?ip={ip}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given IP Address, or auto.",
+                "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a lat\/lon.",
+                "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a Postal Code",
+                "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/daily?station={station}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a station ID.",
+                "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryDailyStationStationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "station",
+                        "in": "path",
+                        "description": "Station ID."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/energy\/bbox?lat1={lat1}&lon1={lon1}&lat2={lat2}&lon2={lon2}": {
+            "get": {
+                "summary": "Returns multiple locations given a bounding box. ",
+                "description": "Returns aggregate energy specific historical weather fields, over a specified time period. Supply a bounding box ex: lat1=40&lon1=-78&lat2=38&lon2=-80. This API will return UP TO 150 stations, aggregated by the specified time period start_date to end_date. ",
+                "operationId": "HistoryEnergyBboxLat1Lat1Lon1Lon1Lat2Lat2Lon2Lon2Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat1",
+                        "in": "path",
+                        "description": "Latitude of upper left corner."
+                    },
+                    {
+                        "name": "lon1",
+                        "in": "path",
+                        "description": "Longitude of upper left corner."
+                    },
+                    {
+                        "name": "lat2",
+                        "in": "path",
+                        "description": "Latitude of lower right corner."
+                    },
+                    {
+                        "name": "lon2",
+                        "in": "path",
+                        "description": "Longitude of lower right corner."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "threshold",
+                        "in": "query",
+                        "description": "Temperature threshold to use to calculate degree days (default 18 C) "
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/energy?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns Energy API response  - Given a single lat\/lon. ",
+                "description": "Returns aggregate energy specific historical weather fields, over a specified time period.",
+                "operationId": "HistoryEnergyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "tp",
+                        "in": "query",
+                        "description": "Time period to aggregate by (daily, monthly)"
+                    },
+                    {
+                        "name": "threshold",
+                        "in": "query",
+                        "description": "Temperature threshold to use to calculate degree days (default 18 C) "
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?city={city}&country={country}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given City and\/or State, Country.",
+                "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyCityCityCountryCountryGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "path",
+                        "description": "City search.. Example - &city=Raleigh,NC or &city=Berlin,DE or city=Paris&country=FR"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Full name of state."
+                    },
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?city_id={city_id}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a City ID",
+                "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyCityIdCityIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "city_id",
+                        "in": "path",
+                        "description": "City ID. Example: 4487042"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?ip={ip}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given IP Address, or auto.",
+                "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?lat={lat}&lon={lon}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a lat\/lon.",
+                "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyLatLatLonLonGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "path",
+                        "description": "Latitude component of location."
+                    },
+                    {
+                        "name": "lon",
+                        "in": "path",
+                        "description": "Longitude component of location."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?postal_code={postal_code}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a Postal Code",
+                "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyPostalCodePostalCodeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "postal_code",
+                        "in": "path",
+                        "description": "Postal Code. Example: 28546"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Country Code (2 letter)."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/history\/hourly?station={station}": {
+            "get": {
+                "summary": "Returns Historical Observations - Given a station ID.",
+                "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
+                "operationId": "HistoryHourlyStationStationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "station",
+                        "in": "path",
+                        "description": "Station ID."
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "Start Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "End Date (YYYY-MM-DD or YYYY-MM-DD:HH)."
+                    },
+                    {
+                        "name": "units",
+                        "in": "query",
+                        "description": "Convert to units. Default Metric See <a target='blank' href='\/api\/requests'>units field description<\/a>"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language (Default: English) See <a target='blank' href='\/api\/requests'>language field description<\/a>"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/ip?ip={ip}": {
+            "get": {
+                "summary": "Returns an Geolocation object.",
+                "description": "Returns a geolocation object. Given an IP address. If no IP supplied, will use request IP address.",
+                "operationId": "IpIpIpGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ip",
+                        "in": "path",
+                        "description": "IP Address, or auto. Example: ip=auto"
+                    },
+                    {
+                        "name": "callback",
+                        "in": "query",
+                        "description": "Wraps return in jsonp callback. Example: callback=func"
+                    },
+                    {
+                        "name": "exclude",
+                        "in": "query",
+                        "description": "exclude=all => return IP address only"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "&format=none => return IP address as string"
+                    },
+                    {
+                        "name": "key",
+                        "in": "query",
+                        "description": "Your registered API key."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An Historical Day Data Object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/HistoryDay"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CurrentObs": {
+                "type": "object",
+                "properties": {
+                    "app_temp": {
+                        "description": "Apparent temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "clouds": {
+                        "description": "Cloud cover (%)",
+                        "type": "integer"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "datetime": {
+                        "description": "Cycle Hour (UTC) of observation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point temperature - default (C)",
+                        "type": "number"
+                    },
+                    "dhi": {
+                        "description": "Direct component of solar insolation (W\/m^2)",
+                        "type": "number"
+                    },
+                    "elev_angle": {
+                        "description": "Current solar elevation angle (Degrees)",
+                        "type": "number"
+                    },
+                    "hour_angle": {
+                        "description": "Current solar hour angle (Degrees)",
+                        "type": "number"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "number"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "number"
+                    },
+                    "ob_time": {
+                        "description": "Full time (UTC) of observation (YYYY-MM-DD HH:MM)",
+                        "type": "string"
+                    },
+                    "pod": {
+                        "description": "Part of the day (d = day, n = night)",
+                        "type": "string"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "pres": {
+                        "description": "Pressure (mb)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "slp": {
+                        "description": "Mean sea level pressure in millibars (mb)",
+                        "type": "number"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "station": {
+                        "description": "Source Station ID",
+                        "type": "string"
+                    },
+                    "sunrise": {
+                        "description": "Time (UTC) of Sunrise (HH:MM)",
+                        "type": "string"
+                    },
+                    "sunset": {
+                        "description": "Time (UTC) of Sunset (HH:MM)",
+                        "type": "string"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    },
+                    "ts": {
+                        "description": "Unix Timestamp",
+                        "type": "number"
+                    },
+                    "uv": {
+                        "description": "UV Index",
+                        "type": "number"
+                    },
+                    "vis": {
+                        "description": "Visibility - default (M)",
+                        "type": "integer"
+                    },
+                    "weather": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "wind_cdir": {
+                        "description": "Cardinal wind direction",
+                        "type": "string"
+                    },
+                    "wind_cdir_full": {
+                        "description": "Cardinal wind direction (text)",
+                        "type": "string"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_speed": {
+                        "description": "Wind speed - Default (m\/s)",
+                        "type": "number"
+                    }
+                }
+            },
+            "weather": {
+                "type": "object"
+            },
+            "CurrentObsGroup": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "Count of found observations",
+                        "type": "integer"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "data": {
+                "type": "array"
+            },
+            "EnergyObs": {
+                "type": "object",
+                "properties": {
+                    "cdd": {
+                        "description": "Cooling degree days",
+                        "type": "number"
+                    },
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "clouds": {
+                        "description": "Cloud cover (%)",
+                        "type": "integer"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point temperature - default (C)",
+                        "type": "number"
+                    },
+                    "hdd": {
+                        "description": "Heating degree days",
+                        "type": "number"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "station_id": {
+                        "description": "Source Station ID",
+                        "type": "string"
+                    },
+                    "sun_hours": {
+                        "description": "Average number of daily sun hours - # hours where Solar GHI > 1000 W\/m^2",
+                        "type": "number"
+                    },
+                    "t_dhi": {
+                        "description": "Total diffuse horizontal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "t_dni": {
+                        "description": "Total direct normal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "t_ghi": {
+                        "description": "Total global horizontal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_speed": {
+                        "description": "Wind speed - Default (m\/s)",
+                        "type": "number"
+                    }
+                }
+            },
+            "EnergyObsGroup": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "Count of found observations",
+                        "type": "integer"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "end_date": {
+                        "description": "End Date",
+                        "type": "integer"
+                    },
+                    "start_date": {
+                        "description": "Start Date",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Forecast": {
+                "type": "object",
+                "properties": {
+                    "app_max_temp": {
+                        "description": "Apparent Maximum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "app_min_temp": {
+                        "description": "Apparent Minimum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "clouds": {
+                        "description": "Cloud cover (%)",
+                        "type": "integer"
+                    },
+                    "datetime": {
+                        "description": "Cycle Hour (UTC) of observation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point temperature - default (C)",
+                        "type": "number"
+                    },
+                    "max_dhi": {
+                        "description": "[Deprecated] Max direct component of solar insolation (W\/m^2)",
+                        "type": "number"
+                    },
+                    "max_temp": {
+                        "description": "Maximum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "min_temp": {
+                        "description": "Minimum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "pod": {
+                        "description": "Part of the day (d = day, n = night)",
+                        "type": "string"
+                    },
+                    "pop": {
+                        "description": "Chance of Precipitation as a percentage (%)",
+                        "type": "number"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "pres": {
+                        "description": "Pressure (mb)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "slp": {
+                        "description": "Mean sea level pressure in millibars (mb)",
+                        "type": "number"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "snow_depth": {
+                        "description": "Snow Depth - default (mm)",
+                        "type": "number"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "ts": {
+                        "description": "Unix Timestamp",
+                        "type": "number"
+                    },
+                    "uv": {
+                        "description": "UV Index",
+                        "type": "number"
+                    },
+                    "vis": {
+                        "description": "Average Visibility default (KM)",
+                        "type": "number"
+                    },
+                    "weather": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "wind_cdir": {
+                        "description": "Cardinal wind direction",
+                        "type": "string"
+                    },
+                    "wind_cdir_full": {
+                        "description": "Cardinal wind direction (text)",
+                        "type": "string"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_spd": {
+                        "description": "Wind Speed (default m\/s)",
+                        "type": "number"
+                    }
+                }
+            },
+            "ForecastDay": {
+                "type": "object",
+                "properties": {
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    }
+                }
+            },
+            "ForecastHour": {
+                "type": "object",
+                "properties": {
+                    "app_temp": {
+                        "description": "Apparent temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "clouds": {
+                        "description": "Cloud cover (%)",
+                        "type": "integer"
+                    },
+                    "datetime": {
+                        "description": "Cycle Hour (UTC) of observation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point temperature - default (C)",
+                        "type": "number"
+                    },
+                    "dhi": {
+                        "description": "Direct component of solar insolation (W\/m^2)",
+                        "type": "number"
+                    },
+                    "dni": {
+                        "description": "Direct normal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "ghi": {
+                        "description": "Global horizontal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "pod": {
+                        "description": "Part of the day (d = day, n = night)",
+                        "type": "string"
+                    },
+                    "pop": {
+                        "description": "Chance of Precipitation as a percentage (%)",
+                        "type": "number"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "precip6h": {
+                        "description": "Accumulated precipitation since last forecast point. Default (mm)",
+                        "type": "number"
+                    },
+                    "pres": {
+                        "description": "Pressure (mb)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "slp": {
+                        "description": "Mean sea level pressure in millibars (mb)",
+                        "type": "number"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "snow6h": {
+                        "description": "6 hour accumulated snowfall. Default (mm)",
+                        "type": "number"
+                    },
+                    "snow_depth": {
+                        "description": "Snow Depth - default (mm)",
+                        "type": "number"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "ts": {
+                        "description": "Unix Timestamp",
+                        "type": "number"
+                    },
+                    "uv": {
+                        "description": "UV Index",
+                        "type": "number"
+                    },
+                    "vis": {
+                        "description": "Average Visibility default (KM)",
+                        "type": "number"
+                    },
+                    "weather": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "wind_cdir": {
+                        "description": "Cardinal wind direction",
+                        "type": "string"
+                    },
+                    "wind_cdir_full": {
+                        "description": "Cardinal wind direction (text)",
+                        "type": "string"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_spd": {
+                        "description": "Wind Speed (default m\/s)",
+                        "type": "number"
+                    }
+                }
+            },
+            "ForecastHourly": {
+                "type": "object",
+                "properties": {
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoIPObj": {
+                "type": "object",
+                "properties": {
+                    "area_code": {
+                        "description": "Area Code",
+                        "type": "string"
+                    },
+                    "charset": {
+                        "description": "Character encoding",
+                        "type": "string"
+                    },
+                    "city": {
+                        "description": "City Name",
+                        "type": "string"
+                    },
+                    "continent_code": {
+                        "description": "Country Abbreviation",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "country_code3": {
+                        "description": "Country Code (Long)",
+                        "type": "string"
+                    },
+                    "dma_code": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "ip": {
+                        "description": "IP Address",
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "description": "State Abbreviation",
+                        "type": "string"
+                    },
+                    "longitude": {
+                        "description": "City Name",
+                        "type": "string"
+                    },
+                    "metro_code": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "offset": {
+                        "description": "UTC Offset (deprecated)",
+                        "type": "string"
+                    },
+                    "organization": {
+                        "description": "Organization Name",
+                        "type": "string"
+                    },
+                    "postal_code": {
+                        "description": "Postal Code",
+                        "type": "string"
+                    },
+                    "region": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    }
+                }
+            },
+            "History": {
+                "type": "object",
+                "properties": {
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "sources": {
+                        "description": "Weather stations used in response",
+                        "type": "array"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    }
+                }
+            },
+            "sources": {
+                "type": "array"
+            },
+            "HistoryDay": {
+                "type": "object",
+                "properties": {
+                    "city_name": {
+                        "description": "City name (closest)",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "description": "Country abbreviation",
+                        "type": "string"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "lat": {
+                        "description": "Latitude",
+                        "type": "string"
+                    },
+                    "lon": {
+                        "description": "Longitude",
+                        "type": "string"
+                    },
+                    "sources": {
+                        "description": "Weather stations used in response",
+                        "type": "array"
+                    },
+                    "state_code": {
+                        "description": "State abbreviation",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "Local IANA time zone",
+                        "type": "string"
+                    }
+                }
+            },
+            "HistoryDayObj": {
+                "type": "object",
+                "properties": {
+                    "datetime": {
+                        "description": "Cycle Hour (UTC) of observation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point temperature - default (C)",
+                        "type": "number"
+                    },
+                    "dhi": {
+                        "description": "Average hourly diffuse horizontal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "dni": {
+                        "description": "Average direct normal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "ghi": {
+                        "description": "Average hourly global horizontal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "max_temp": {
+                        "description": "Maximum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "max_temp_ts": {
+                        "description": "Time of max memperature - Unix Timestamp",
+                        "type": "number"
+                    },
+                    "max_uv": {
+                        "description": "Max UV Index (1-11+)",
+                        "type": "integer"
+                    },
+                    "max_wind_dir": {
+                        "description": "Direction of wind at time of max 2min wind (degrees)",
+                        "type": "integer"
+                    },
+                    "max_wind_spd": {
+                        "description": "Max 2min Wind Speed - default (m\/s)",
+                        "type": "number"
+                    },
+                    "max_wind_spd_ts": {
+                        "description": "Time of max 2min wind - unix timestamp",
+                        "type": "number"
+                    },
+                    "min_temp": {
+                        "description": "Minimum daily Temperature - default (C)",
+                        "type": "number"
+                    },
+                    "min_temp_ts": {
+                        "description": "Time of max temperature - unix timestamp",
+                        "type": "number"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "pres": {
+                        "description": "Pressure (mb)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "slp": {
+                        "description": "Mean sea level pressure in millibars (mb)",
+                        "type": "number"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "snow_depth": {
+                        "description": "Snow Depth - default (mm)",
+                        "type": "number"
+                    },
+                    "t_dhi": {
+                        "description": "Total diffuse horizontal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "t_dni": {
+                        "description": "Total direct normal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "t_ghi": {
+                        "description": "Total global horizontal solar irradiance (W\/m^2)",
+                        "type": "integer"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "ts": {
+                        "description": "Unix Timestamp",
+                        "type": "number"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_gust_spd": {
+                        "description": "Wind gust direction (degrees)",
+                        "type": "number"
+                    },
+                    "wind_spd": {
+                        "description": "Wind Speed (default m\/s)",
+                        "type": "number"
+                    }
+                }
+            },
+            "HistoryObj": {
+                "type": "object",
+                "properties": {
+                    "datetime": {
+                        "description": "Cycle Hour (UTC) of observation",
+                        "type": "string"
+                    },
+                    "dewpt": {
+                        "description": "Dew point (Default Celcius)",
+                        "type": "integer"
+                    },
+                    "dhi": {
+                        "description": "Direct component of solar insolation (W\/m^2)",
+                        "type": "number"
+                    },
+                    "dni": {
+                        "description": "Direct normal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "elev_angle": {
+                        "description": "Current solar elevation angle (Degrees)",
+                        "type": "number"
+                    },
+                    "ghi": {
+                        "description": "Global horizontal solar irradiance (W\/m^2)",
+                        "type": "number"
+                    },
+                    "h_angle": {
+                        "description": "Solar hour angle (Degrees)",
+                        "type": "number"
+                    },
+                    "pod": {
+                        "description": "Part of the day (d = day, n = night)",
+                        "type": "string"
+                    },
+                    "precip": {
+                        "description": "Precipitation in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "precip6h": {
+                        "description": "Accumulated precipitation since last forecast point. Default (mm)",
+                        "type": "number"
+                    },
+                    "pres": {
+                        "description": "Pressure (mb)",
+                        "type": "number"
+                    },
+                    "rh": {
+                        "description": "Relative humidity (%)",
+                        "type": "integer"
+                    },
+                    "slp": {
+                        "description": "Mean sea level pressure in millibars (mb)",
+                        "type": "number"
+                    },
+                    "snow": {
+                        "description": "Snowfall in last hour - Default (mm)",
+                        "type": "number"
+                    },
+                    "snow6h": {
+                        "description": "6 hour accumulated snowfall. Default (mm)",
+                        "type": "number"
+                    },
+                    "temp": {
+                        "description": "Temperature - Default (C)",
+                        "type": "number"
+                    },
+                    "ts": {
+                        "description": "Unix Timestamp (UTC)",
+                        "type": "string"
+                    },
+                    "uv": {
+                        "description": "UV Index (1-11+)",
+                        "type": "integer"
+                    },
+                    "weather": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "wind_dir": {
+                        "description": "Wind direction (degrees)",
+                        "type": "integer"
+                    },
+                    "wind_spd": {
+                        "description": "Wind Speed (default m\/s)",
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}
