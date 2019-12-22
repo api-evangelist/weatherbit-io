@@ -1,5 +1,5 @@
 {
-    "id": "1480f60c1c1ea6fb1926783dfee33c39",
+    "id": "356d490e7cbe2a75dc64bc1a2f50f228",
     "name": "Weatherbit",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a91297a3d0963fa4aacf4a4a5fce4b8d",
+            "id": "bcb9e10a52e56711f97429ea79b2f653",
             "name": "Get Bulk History Daily City Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?city={city}&country={country}",
             "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
@@ -93,11 +93,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "1ff0af2f10b00a5234c89792c2f030a1",
+            "id": "76f6c2c9b1687b5786ab768201b623a6",
             "name": "Get Bulk History Daily City",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?city_id={city_id}",
             "description": "Returns Historical Observations - Given a City ID.",
@@ -166,11 +166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "fb9bc9ecdd9c7c0e817da0f3e8c72d16",
+            "id": "cddd07fa8190752634215bc07c6ed300",
             "name": "Get Bulk History Daily IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?ip={ip}",
             "description": "Returns Historical Observations - Given IP Address, or auto.",
@@ -239,11 +239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "7b1eb2527cdf8a8c9c331578cfed0d4f",
+            "id": "862d3e5bbe17b1b6f2bb1c3cd5a81d8a",
             "name": "Get Bulk History Daily Lat Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?lat={lat}&lon={lon}",
             "description": "Returns Historical Observations - Given a lat, and lon.",
@@ -319,11 +319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "50b51517dc384b54fd54371cd37bbfaf",
+            "id": "403bbdaa99ff60b9b0f17d0c6236eabf",
             "name": "Get Bulk History Daily Postal Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?postal_code={postal_code}",
             "description": "Returns Historical Observations - Given a Postal Code.",
@@ -399,11 +399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "ffa7962465370c15a4748d8ec9c5b1ea",
+            "id": "5dc3dda9175c445ebe7073c34552bd30",
             "name": "Get Bulk History Daily Station",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/daily?station={station}",
             "description": "Returns Historical Observations - Given a station ID.",
@@ -472,11 +472,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "856b665de99eb073d5e15c444c031d36",
+            "id": "00c7b3f399c1cd448a26b999984ea316",
             "name": "Get Bulk History Hourly City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?city={city}&country={country}",
             "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.",
@@ -559,11 +559,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "e638a06f002bf6f24878ed1ab5c652d8",
+            "id": "0634c30b84fedc77fc0d877808a4c1b8",
             "name": "Get Bulk History Hourly City",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?city_id={city_id}",
             "description": "Returns Historical Observations - Given a City ID.",
@@ -632,11 +632,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "48c3e0d38a3ff5c21ca0935eb0b6a789",
+            "id": "095f3584b690f4d824e62d3891ade755",
             "name": "Get Bulk History Hourly IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?ip={ip}",
             "description": "Returns Historical Observations - Given IP Address, or auto.",
@@ -705,11 +705,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "ff414074f53c37c274e56de3347a501e",
+            "id": "cc2ad510a11d502c4dcc0c7cff568337",
             "name": "Get Bulk History Hourly Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?lat={lat}&lon={lon}",
             "description": "Returns Historical Observations - Given a lat, and lon.",
@@ -785,11 +785,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "b424cfac613f371f5f66fde192e1e668",
+            "id": "5b7fc0ad691318e8b556ba93f642bdb7",
             "name": "Get Bulk History Hourly Postal Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?postal_code={postal_code}",
             "description": "Returns Historical Observations - Given a Postal Code. ",
@@ -865,11 +865,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "4ff224d02c8a53c6390bfc52255f98ce",
+            "id": "6a24b9901cc2d3e6b058be4b6c11b86f",
             "name": "Get Bulk History Hourly Station",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/history\/hourly?station={station}",
             "description": "Returns Historical Observations - Given a station ID.",
@@ -938,11 +938,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "99944fdb51b56550beba4676f4f749e9",
+            "id": "a2ce9c3b370298f2a2516e3efad76416",
             "name": "Get Bulk File",
             "url": "httpsapi.weatherbit.io\/v2.0\/bulk\/{file}",
             "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Downloads bulk data files - OPTIONS: (forecast16d.json.gz - 16 day forecasts for cities > 1000 population, current.json.gz - Current observations for cities > 1000 population).",
@@ -976,11 +976,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "5c119970a2f4e7169e0d784b887f5193",
+            "id": "8e9b2df43b2385f75408e94ecafc26ab",
             "name": "Get Current Cities",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?city={city}",
             "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of City IDs. ",
@@ -1049,11 +1049,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "dbc94a1ab70bfbdc2abe5974d446b266",
+            "id": "1ba38e3dc2d1be463004abcf0ceeea9e",
             "name": "Get Current IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?ip={ip}",
             "description": "Returns a Current Observation - Given an IP address, or auto.",
@@ -1115,11 +1115,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "332da28cdb0344487df900573ae7c7b7",
+            "id": "35573e17ae9a02673fb092b8001ff379",
             "name": "Get Current Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?lat={lat}&lon={lon}",
             "description": "Returns a Current Observation - given a lat, and a lon.",
@@ -1188,11 +1188,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "695509183783d2b1555e16f67e423d04",
+            "id": "98e59b3620b4566cd566665fc85066b2",
             "name": "Get Current Postla Code Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?postal_code={postal_code}",
             "description": "Returns current weather observation - Given a Postal Code. ",
@@ -1261,11 +1261,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "0a9eff1f8f66d9d0d420e39d76a7d8f4",
+            "id": "43f12bbcc1456187d01b73278fdb4f73",
             "name": "Get Current Station Station",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?station={station}",
             "description": "Returns a Current Observation - Given a station ID.",
@@ -1320,11 +1320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "333db8f62af49863fd1b48feab1baf30",
+            "id": "d80ee644d7b4aaefeb7f84c7550c1f07",
             "name": "Get Current Stations Stations",
             "url": "httpsapi.weatherbit.io\/v2.0\/current?stations={stations}",
             "description": "**(Advanced\/Advanced+\/Enterprise plans only)** Returns a group of Current Observations - Given a list of Station Call IDs. ",
@@ -1379,11 +1379,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "a8c7032fd5a61dece5e7991e8eb73f8f",
+            "id": "2510c6bf42b5d95581e091d1138c6e95",
             "name": "Get Forecast 3hourly City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/3hourly?city={city}&country={country}",
             "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
@@ -1459,11 +1459,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "243f7035ee7cdb986ed290c3b5b9833e",
+            "id": "c3a7df7d3a09f7a9b95f68084fbc80d5",
             "name": "Get Forecast 3hourly City",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/3hourly?city_id={city_id}",
             "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
@@ -1525,11 +1525,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "aae5f57a5d3eaea58daea185690faee8",
+            "id": "f2ea21cab719320040b820c21398c962",
             "name": "Get Forecast 3hourly IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/3hourly?ip={ip}",
             "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
@@ -1591,11 +1591,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "d07990c87052999671aa6df53048b118",
+            "id": "cc66b947f90ea0e7e1883255807dc88a",
             "name": "Get Forecast 3hourly Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/3hourly?lat={lat}&lon={lon}",
             "description": "Returns a 3-hourly forecast, where each point represents a three hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
@@ -1664,11 +1664,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "e6d0a8b991189c25b875f6fce46da90d",
+            "id": "dcbc805d865090e6d6253337f7170883",
             "name": "Get Forecast 3hourly Postla Code Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/3hourly?postal_code={postal_code}",
             "description": "Returns a 3-hourly forecast, where each point represents a three hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC.\n",
@@ -1737,11 +1737,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "302f4c0b8d148f01653a898f026fe7f6",
+            "id": "7d47aa7d1473cce8634c1c8aa2e2e6e8",
             "name": "Get Forecast Daily City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/daily?city={city}&country={country}",
             "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
@@ -1817,11 +1817,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "365ae1734ff656a1d727d809c91937e1",
+            "id": "a15a3cee3e145124e29edb81398b58ee",
             "name": "Get Forecast Daily City",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/daily?city_id={city_id}",
             "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
@@ -1883,11 +1883,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "b5ac22750eed174e23f4db3c0a92a496",
+            "id": "0ca0b1cadca9232731781fb33c0a5f46",
             "name": "Get Forecast Daily IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/daily?ip={ip}",
             "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
@@ -1949,11 +1949,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "a5fbf4d38ec2b30f0d83d4e964b0cc34",
+            "id": "4e7828075a37868d800964d6d09bfae7",
             "name": "Get Forecast Daily Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/daily?lat={lat}&lon={lon}",
             "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC. \n",
@@ -2022,11 +2022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "0a8a0e6bea88e0e48d7b9d6b8edb05a6",
+            "id": "b7e01aee0f8a2820bd11da4bbcb6ac2c",
             "name": "Get Forecast Daily Postla Code Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/daily?postal_code={postal_code}",
             "description": "**(REQUIRED: Basic Plan or Higher)** Returns a daily forecast, where each point represents one day (24hr) period. Every point has a datetime string in the format \"YYYY-MM-DD\". One day begins at 00:00 UTC, and ends at 23:59 UTC.\n",
@@ -2095,11 +2095,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "114fa93e0d6af56af785a67607dec775",
+            "id": "632b1fa529b730b032709da7faee5d7d",
             "name": "Get Forecast Hourly City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/hourly?city={city}&country={country}",
             "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. Accepts a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate.\n",
@@ -2175,11 +2175,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "0f52e671e625dced6581f40ae76a9eb8",
+            "id": "b1423e91b793a7a7fef7aa8fed84a730",
             "name": "Get Forecast Hourly City",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/hourly?city_id={city_id}",
             "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
@@ -2241,11 +2241,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "7e4ca805a5ad7469e824e6debe048cc4",
+            "id": "efe8210190e423805d2445b2fef596ad",
             "name": "Get Forecast Hourly IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/hourly?ip={ip}",
             "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
@@ -2314,11 +2314,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "c1aeb5c35e470fe38397c8dea736b4aa",
+            "id": "5813101bcd649ade27846860a2d37207",
             "name": "Get Forecast Hourly Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/hourly?lat={lat}&lon={lon}",
             "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
@@ -2387,11 +2387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "fe21357c906606c7f95042c0e7ab10ee",
+            "id": "b30a1c9b3fb25a9177caa6781b2565ef",
             "name": "Get Forecast Hourly Postla Code Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/forecast\/hourly?postal_code={postal_code}",
             "description": "**(REQUIRED: Developer Plan or Higher)** Returns an hourly forecast, where each point represents a one hour   period. Every point has a datetime string in the format \"YYYY-MM-DD:HH\". Time is UTC. \n",
@@ -2460,11 +2460,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "67b6044943ec9a19929325c6ee48a460",
+            "id": "29c3208d917872828eb2b8cc1319e1a9",
             "name": "Get History Daily City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?city={city}&country={country}",
             "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2547,11 +2547,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "8e6a6a7457c45d822dd36a7333962db8",
+            "id": "e867b59bab5cda60fddb2470fc8a313f",
             "name": "Get History Daily City",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?city_id={city_id}",
             "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2620,11 +2620,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "41c54ad5d9d800b6493c1b33c9b04213",
+            "id": "81c6a055ee8a6a5f50914ab749262d7e",
             "name": "Get History Daily IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?ip={ip}",
             "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2693,11 +2693,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "5db8ddb12a6daa3fd8ba3df283716446",
+            "id": "5a450df64cd383a3af3b865cb843f1dc",
             "name": "Get History Daily Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?lat={lat}&lon={lon}",
             "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2773,11 +2773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "3e4030dfb3c9529d7f5a0413dea9fcd9",
+            "id": "70cfd98ff369aedd879dee73d0a95838",
             "name": "Get History Daily Postla Code Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?postal_code={postal_code}",
             "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2853,11 +2853,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "457714e0ea326f7c18f01fe29537a480",
+            "id": "533cbdb5665d81148035153a7e7fe482",
             "name": "Get History Daily Station Station",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/daily?station={station}",
             "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -2926,11 +2926,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "31e2fb54dd3cfd82b2aa04ba4607a48b",
+            "id": "91ffa78bcc4dbd897694703334656318",
             "name": "Get History Energy Bbox Lat1 Lat1 &lon1 Lon1 &lat2 Lat2 &lon2 Lon2",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/energy\/bbox?lat1={lat1}&lon1={lon1}&lat2={lat2}&lon2={lon2}",
             "description": "Returns aggregate energy specific historical weather fields, over a specified time period. Supply a bounding box ex: lat1=40&lon1=-78&lat2=38&lon2=-80. This API will return UP TO 150 stations, aggregated by the specified time period start_date to end_date. ",
@@ -3013,11 +3013,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "b2fecb92089877f344cfdffa62b81905",
+            "id": "5bfe7e17175b5aa6f780b99080450133",
             "name": "Get History Energy Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/energy?lat={lat}&lon={lon}",
             "description": "Returns aggregate energy specific historical weather fields, over a specified time period.",
@@ -3086,11 +3086,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "1a22b3341a8569ade3b9eec78f5825be",
+            "id": "681d4217fbb2c307d9e83743d046a80f",
             "name": "Get History Hourly City & Country",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?city={city}&country={country}",
             "description": "Returns Historical Observations - Given a city in the format of City,ST or City. The state, and country parameters can be provided to make the search more accurate. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3173,11 +3173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "e7c2560ddd8ec599599c2c6642fce033",
+            "id": "95233fde793bf06e796c970970df2d2f",
             "name": "Get History Hourly City",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?city_id={city_id}",
             "description": "Returns Historical Observations - Given a City ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3246,11 +3246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "87e7bae54b278561f0b577e73f31e7a8",
+            "id": "6824b594cda15a470c87dc5e8f96ab28",
             "name": "Get History Hourly IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?ip={ip}",
             "description": "Returns Historical Observations - Given IP Address, or auto. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3319,11 +3319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "3614dc7e181f8ff52501786cf3656e9a",
+            "id": "acd9159357d8199cb6894c2f1fc2fee4",
             "name": "Get History Hourly Lat & Lon",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?lat={lat}&lon={lon}",
             "description": "Returns Historical Observations - Given a lat, and lon. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3399,11 +3399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "c07ea3704917603208eaa25e5ded4fe7",
+            "id": "e4a2b42a5951baf0a5ee39c5d7ae4286",
             "name": "Get History Hourly Postal Code",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?postal_code={postal_code}",
             "description": "Returns Historical Observations - Given a Postal Code. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3479,11 +3479,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "a206b3dbf5616a7ab0443d4a1196b473",
+            "id": "0f0a2a75dac8eea3d41a9777fa8e3053",
             "name": "Get History Hourly Station Station",
             "url": "httpsapi.weatherbit.io\/v2.0\/history\/hourly?station={station}",
             "description": "Returns Historical Observations - Given a station ID. **(LIMIT 1 day for Low Volume plans. LIMIT 7 days for Basic\/Developer. LIMIT 30 days for Advanced\/Advanced+\/Enterprise)**",
@@ -3552,11 +3552,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         },
         {
-            "id": "6687d3e0c59ad09d46d3f390372d5410",
+            "id": "26badb27bd23365983b087a32ac2fa9f",
             "name": "Get IP",
             "url": "httpsapi.weatherbit.io\/v2.0\/ip?ip={ip}",
             "description": "Returns a geolocation object. Given an IP address. If no IP supplied, will use request IP address.",
@@ -3611,7 +3611,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "1480f60c1c1ea6fb1926783dfee33c39",
+            "collectionId": "356d490e7cbe2a75dc64bc1a2f50f228",
             "rawModeData": ""
         }
     ]
